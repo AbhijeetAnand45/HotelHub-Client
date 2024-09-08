@@ -3,7 +3,7 @@ const FooterComponent = () => {
     return (
         <footer>
             <span className="my-footer">
-                Hotel Hub | All Rights Reserved &copy: {new Date().getFullYear}
+                Hotel Hub | All Rights Reserved &copy: {new Date().getFullYear()}
             </span>
         </footer>
     )
