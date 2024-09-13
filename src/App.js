@@ -12,7 +12,13 @@ import LoginPage from './components/auth/LoginPage';
 import RegisterPage from './components/auth/RegisterPage';
 import ProfilePage from './components/profile/ProfilePage';
 import EditProfilePage from './components/profile/EditProfilePage';
-import { ProtectedRoute } from './service/guard';
+import { ProtectedRoute, AdminRoute } from './service/guard';
+import AdminPage from './components/admin/AdminPage';
+import AddRoomPage from './components/admin/AddRoomPage';
+import EditBookingPage from './components/admin/EditBookingPage';
+import EditRoomPage from './components/admin/EditRoomPage';
+import ManageBookingsPage from './components/admin/ManageBookingsPage';
+import ManageRoomPage from './components/admin/ManageRoomPage';
 
 function App() {
   return (
@@ -28,13 +34,33 @@ function App() {
             <Route exact path='/login' element={<LoginPage/>}/>
             <Route exact path='/register' element={<RegisterPage/>}/>
 
-            {/* authenticated user routes  */}
+            {/* protected routes  */}
             <Route exact path='/room-details-book/:roomId' element = {<ProtectedRoute element={<RoomDetailsPage/>}/>} />
             <Route exact path='/profile' element={<ProtectedRoute element={<ProfilePage/>}/>} />
             <Route exact path='/edit-profile' element={<ProtectedRoute element={<EditProfilePage/>}/>} />
 
 
-            {/* WildCard/Backcall routes  */}
+            {/* Admin Routes */}
+            <Route path="/admin"
+              element={<AdminRoute element={<AdminPage />} />}
+            />
+            <Route path="/admin/manage-rooms"
+              element={<AdminRoute element={<ManageRoomPage />} />}
+            />
+            <Route path="/admin/edit-room/:roomId"
+              element={<AdminRoute element={<EditRoomPage />} />}
+            />
+            <Route path="/admin/add-room"
+              element={<AdminRoute element={<AddRoomPage />} />}
+            />
+            <Route path="/admin/manage-bookings"
+              element={<AdminRoute element={<ManageBookingsPage />} />}
+            />
+            <Route path="/admin/edit-booking/:bookingCode"
+              element={<AdminRoute element={<EditBookingPage />} />}
+            />
+
+            {/* WildCard/Fallback route */}
             <Route path="*" element={<Navigate to="/home" />} />
 
           </Routes>
