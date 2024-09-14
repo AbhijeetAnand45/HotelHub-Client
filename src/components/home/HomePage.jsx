@@ -32,16 +32,17 @@ const HomePage = () => {
 
             <h4><a className="view-rooms-home" href="/rooms">All Rooms</a></h4>
 
-            <h2 className="home-services">Services at <span className="phegon-color">Hotel Hub</span></h2>
+            <h2 className="home-services">Services at <span className="hub-color">Hotel Hub</span></h2>
 
             {/* SERVICES SECTION */}
-            <section className="service-section"><div className="service-card">
-                <img src="./assets/images/ac.png" alt="Air Conditioning" />
-                <div className="service-details">
-                    <h3 className="service-title">Air Conditioning</h3>
-                    <p className="service-description">Stay cool and comfortable throughout your stay with our individually controlled in-room air conditioning.</p>
+            <section className="service-section">
+                <div className="service-card">
+                    <img src="./assets/images/ac.png" alt="Air Conditioning" />
+                    <div className="service-details">
+                        <h3 className="service-title">Air Conditioning</h3>
+                        <p className="service-description">Stay cool and comfortable throughout your stay with our individually controlled in-room air conditioning.</p>
+                    </div>
                 </div>
-            </div>
                 <div className="service-card">
                     <img src="./assets/images/mini-bar.png" alt="Mini Bar" />
                     <div className="service-details">

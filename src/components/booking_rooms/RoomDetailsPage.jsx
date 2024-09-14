@@ -60,13 +60,17 @@ const RoomDetailsPage = () => {
     const startDate = new Date(checkInDate);
     const endDate = new Date(checkOutDate);
     const totalDays = Math.round(Math.abs((endDate - startDate) / oneDay)) + 1;
+    console.log("Total Days : "+ totalDays);
 
     // Calculate total number of guests
     const totalGuests = numAdults + numChildren;
+    console.log("Total Guest : " + totalGuests);
 
     // Calculate total price
     const roomPricePerNight = roomDetails.roomPrice;
+    console.log("Room Price per night : Rs "+ roomPricePerNight);
     const totalPrice = roomPricePerNight * totalDays;
+    console.log("Total Price: Rs " + totalPrice);
 
     setTotalPrice(totalPrice);
     setTotalGuests(totalGuests);
@@ -221,7 +225,7 @@ const RoomDetailsPage = () => {
         )}
         {totalPrice > 0 && (
           <div className="total-price">
-            <p>Total Price: ${totalPrice}</p>
+            <p>Total Price: Rs {totalPrice}</p>
             <p>Total Guests: {totalGuests}</p>
             <button onClick={acceptBooking} className="accept-booking">Accept Booking</button>
           </div>

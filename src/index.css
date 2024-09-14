@@ -138,7 +138,7 @@ button[type="submit"]:hover {
 
 /**REGISTRATION PAGE END HERE*/
 
-/**NAV BAR STYLING START HERE*/
+/**NAVBAR STYLING START HERE*/
 /* NAVBAR STYLING */
 
 
@@ -153,7 +153,7 @@ button[type="submit"]:hover {
 
 /**NAV BAR STYLING END HERE*/
 
-/* FOOTER STYKLING */
+/* FOOTER STYLING */
 .my-footer {
   color: #f0e8e8;
   background-color: #444;
@@ -361,7 +361,7 @@ button[type="submit"]:hover {
   margin: 5px auto 30px auto;
 }
 
-.phegon-color {
+.hub-color {
   color: #FF007F;
   color: #FF7F50;
 }
