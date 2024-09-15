@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Hotel Hub - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend of **Hotel Hub**, a hotel booking web application. The frontend is built using React and provides a user interface for browsing hotels, booking rooms, and managing accounts for both users and admins.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home Page**: Displays a list of available hotels.
+- **Login/Signup**: Users can create accounts and log in using JWT-based authentication.
+- **Hotel Booking**: Logged-in users can book hotel rooms.
+- **User Profile**: Users can view and update their profile.
+- **Admin Panel**: Admins can manage hotels, users, and bookings from the UI.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: For building the user interface.
+- **React Router**: For navigation between pages.
+- **Axios**: For making HTTP requests to the backend.
+- **Bootstrap**: For styling and layout.
+- **JWT**: Used for handling user authentication.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup Instructions
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js and npm installed
 
-### `npm run build`
+### Steps to run
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/hotel-hub.git
+    cd hotel-hub/frontend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+4. The frontend will be running on `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Login/Register**: Users can sign up or log in to access the hotel booking system.
+- **Browse Hotels**: Users can browse available hotels on the home page.
+- **Book a Hotel**: After logging in, users can select a hotel, view details, and book rooms.
+- **Admin Access**: Admins can log in and manage hotels, rooms, users, and bookings through the admin panel.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Folder Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `src/components/`: Contains React components like forms, hotel listings, and admin panels.
+- `src/pages/`: Contains different pages like Home, Login, Register, Admin Dashboard.
+- `src/services/`: Contains services for making API requests to the backend.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Home Page**:
+    ![Home Page](public/assets/screenshots/Home.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Services**:
+    ![Home Services](public/assets//screenshots/Services.png)
 
-### Code Splitting
+- **Room Page**:
+    ![Room Page](public/assets/screenshots/Rooms.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Find Booking**:
+    ![Booking Page](public/assets/screenshots/Booking.png)
 
-### Analyzing the Bundle Size
+- **Login Page**
+    ![Login Page](public/assets/screenshots/Login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Register Page**
+    ![Register Page](public/assets/screenshots/Register.png)
 
-### Making a Progressive Web App
+- **Admin Dashboard**:
+    ![Admin Dashboard](public/assets/screenshots/Admin.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
